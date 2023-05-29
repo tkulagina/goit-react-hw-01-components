@@ -1,0 +1,21 @@
+.profile {
+background-color:#D2F5E2;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 480px;
+    margin: 0 auto;
+    padding: 24px;
+    border-radius: 12px;
+    background-color: aliceblue;
+
+}
+
+.avatar {
+   
+    width: 200px;
+border-radius: 50%;
+}
