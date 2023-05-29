@@ -1,11 +1,10 @@
 import PropTypes from 'prop-types';
-import user from '../../path/user.json';
-console.log (user)
 
 
 
-export const Profile = ( {username, tag, location, avatar, stats}) => {  
-return (<div className="profile">
+
+export const Profile = ({username, tag, location, avatar, stats}) => {  
+return <div className="profile">
   <div className="description">
     <img
       src={avatar}
@@ -31,7 +30,7 @@ return (<div className="profile">
       <span className="quantity">{stats.likes}</span>
     </li>
   </ul>
-</div>)
+</div>
 };
 
 Profile.propTypes = {
@@ -39,5 +38,9 @@ Profile.propTypes = {
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   avatar: PropTypes.string.isRequired,
-  stats: PropTypes.number.isRequired,
+  stats: PropTypes.exact ({
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired
+  }),
 }
