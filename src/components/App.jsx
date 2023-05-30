@@ -1,7 +1,7 @@
 import user from '../path/user.json';
-import data from 'path/data.json';
-import friends from 'path/friends.json';
-import transactions from 'path/transactions.json';
+import data from '../path/data.json';
+import friends from '../path/friends.json';
+import transactions from '../path/transactions.json';
 
 
 import { Profile } from './Profile/Profile';
@@ -25,3 +25,4 @@ export const App = () => {
   </div>
   );
 };
+ 
