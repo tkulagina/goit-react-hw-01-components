@@ -4,7 +4,9 @@ import css from './Profile.module.css';
 
 
 export const Profile = ({username, tag, location, avatar, stats}) => {  
-return <div className={css.profile}>
+return (
+<div className ={css.container}>
+    <div className={css.profile}>
         <div className={css.description}>
           <img
             src={avatar}
@@ -30,8 +32,9 @@ return <div className={css.profile}>
             <span className={css.quantity}>{stats.likes}</span>
           </li>
         </ul>
-      </div>
-};
+    </div>
+</div>
+)};
 
 Profile.propTypes = {
   username: PropTypes.string.isRequired,
