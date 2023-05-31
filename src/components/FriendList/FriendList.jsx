@@ -4,9 +4,9 @@ import css from './FriendList.module.css';
 export const FriendList = ({friends}) => {
     return (
         <div className={css.container}>
-        <ul className={css.friendList}>
+            <ul className={css.friendList}>
   
-        {friends.map(({avatar, name, isOnline, id}) => {
+            {friends.map(({avatar, name, isOnline, id}) => {
             return (
                 <li className={css.item} key ={id}>
                     <span className={isOnline ? css.onLine : css.offLine}>{isOnline}</span>
@@ -15,8 +15,8 @@ export const FriendList = ({friends}) => {
                 </li>   
             )}
         )}
-    </ul>
-    </div>
+            </ul>
+        </div>
 )}
 
 FriendList.proTypes ={
